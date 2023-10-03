@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <main>
+            
+            <div class="display">
+                <div class="displayText" id="displayText">0</div>
+            </div>
+            <div class="keypad">
+                <table>
+                    <tr>
+                        <td onclick="addToDisplay(7)" id="seven">7</td>
+                        <td onclick="addToDisplay(8)" id="eight">8</td>
+                        <td onclick="addToDisplay(9)" id="nine">9</td>
+                        <td onclick="performOperation('/')" id="divide">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addToDisplay(4)" id="four">4</td>
+                        <td onclick="addToDisplay(5)" id="five">5</td>
+                        <td onclick="addToDisplay(6)" id="six">6</td>
+                        <td onclick="performOperation('*')" id="multiply">*</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addToDisplay(1)" id="one">1</td>
+                        <td onclick="addToDisplay(2)" id="two">2</td>
+                        <td onclick="addToDisplay(3)" id="three">3</td>
+                        <td onclick="performOperation('-')" id="subtract">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addToDisplay(0)" id="zero">0</td>
+                        <td onclick="onEqualClick()" id="equal">=</td>
+                        <td onclick="clearDisplay()" id="clear">C</td>
+                        <td onclick="performOperation('+')" id="add">+</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
